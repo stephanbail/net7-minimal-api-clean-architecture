@@ -1,6 +1,6 @@
-# Movie and Rating API
+# .NET 7 & C# 11 Minimal API: Mastering Clean Architecture for Modern RESTful Services
 
-A feature-rich and robust RESTful API for managing movies and their ratings, built using ASP.NET Core, C#, PostgreSQL, and Dapper ORM. The API includes advanced features like pagination, sorting, and validation, as well as dependency injection and separation of concerns. This project is inspired by Nick Chapsas' course, ["From Zero to Hero: REST APIs in .NET"](https://nickchapsas.com/courses/enrolled/2022064).
+A feature-rich and robust RESTful API for managing movies and their ratings, built using ASP.NET Core, C# 11, .NET 7, PostgreSQL, and Dapper ORM. The API includes advanced features like pagination, sorting, and validation, as well as dependency injection and separation of concerns. This project is inspired by Nick Chapsas' course, ["From Zero to Hero: REST APIs in .NET"](https://nickchapsas.com/courses/enrolled/2022064).
 
 ## Acknowledgments
 
