@@ -1,0 +1,159 @@
+# .NET and Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.log
+*.bak
+*.cache
+*.swp
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.log
+*.scc
+*.bak
+*.sw*
+*~.nib
+*.swm
+*.swn
+*.swo
+*.swn
+*.suo
+*.user
+*.azurePubxml
+*.pubxml
+*.publishproj
+*.pfx
+*.publishsettings
+*.psess
+
+# Visual Studio Code
+.vscode
+*.code-workspace
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Packages
+# it is better to store the NuGet packages outside of the project directory
+packages/
+
+.idea/
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# TeamCity is a build add-in
+_TeamCity*
+
+# DotCover is a Code Coverage Tool
+*.dotCover
+
+# AxoCover is a Code Coverage Tool
+*.axoCover*
+.axoCover/*
+
+# Coverlet is a Code Coverage Tool
+coverage*
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# MightyMoose
+*.mm.*
+AutoTest.Net/
+
+# Web workbench (sass)
+.sass-cache/
+
+# Installshield output folder
+[Ee]xpress/
+
+# DocProject is a documentation generator add-in
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+
+# Click-Once directory
+publish/
+
+# Publish Web Output
+*.[Pp]ublish.xml
+*.azurePubxml
+*.pubxml
+*.publishproj
+
+# Microsoft Azure Web App publish settings. Comment the next line if you want to
+# store the publish settings in the repository
+*.pubxml
+*.publishproj
+
+# NuGet Packages Directory
+**/packages/*
+
+# Windows Azure Build Output
+csx
+*.build.csdef
+
+# Windows Store app package directory
+AppPackages/
+BundleArtifacts/
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# JustCode is a .NET coding add-in
+.JustCode
+
+# TeamCity is a build add-in
+_TeamCity*
+
+# DotCover is a Code Coverage Tool
+*.dotCover
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# MightyMoose
+*.mm.*
+AutoTest.Net/
+
+# Web workbench (Sass)
+.sass-cache/
+
+# Installshield output folder
+[Ee]xpress/
+
+# DocProject is a documentation generator add-in
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html
