@@ -77,7 +77,7 @@ This will set up a PostgreSQL instance with the required configuration. Make sur
 1. Clone the repository:
 
 ```
-git clone https://github.com/stephanbail/MovieRatingAPI.git
+git clone https://github.com/stephanbail/.NET-7-Minimal-API-Clean-Architecture.git
 ```
 
 2. Change to the project directory:
