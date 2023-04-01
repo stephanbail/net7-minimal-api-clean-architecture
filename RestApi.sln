@@ -8,6 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Contracts", "Movies.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{FDF39F59-73E1-4789-9372-BA2852CEAA6D}"
 	ProjectSection(SolutionItems) = preProject
+		Helpers\REST_API.postman_collection.json = Helpers\REST_API.postman_collection.json
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Api", "Helpers\Identity.Api\Identity.Api.csproj", "{38CF8ABE-1D10-434F-91EC-046F3CD5C002}"

@@ -2,19 +2,6 @@
 
 A feature-rich and robust RESTful API for managing movies and their ratings, built using ASP.NET Core, C# 11, .NET 7, PostgreSQL, and Dapper ORM. The API includes advanced features like pagination, sorting, and validation, as well as dependency injection and separation of concerns. This project is inspired by Nick Chapsas' course, ["From Zero to Hero: REST APIs in .NET"](https://nickchapsas.com/courses/enrolled/2022064).
 
-## Acknowledgments
-
-A special thanks to **Nick Chapsas** for his excellent course on building REST APIs in .NET. Nick is a Microsoft MVP for Developer Technologies with years of experience in Software Engineering and Engineering Management. He has worked for some of the world's largest companies, building systems that serve millions of users and tens of thousands of requests per second. Nick is also a YouTube content creator, producing free educational content for C# and .NET. Check out his course [here](https://nickchapsas.com/courses/enrolled/2022064).
-
-## About the Author
-
-![Stephan Bail](files/author.jpg)
-
-**Stephan Bail** is a passionate Microsoft Azure architect & consultant with extensive experience working with blue-chip organizations. Based in Munich, Germany, Stephan enjoys advising mid-sized to large businesses and leveraging his expertise to ensure their cloud journey is successful.
-
-- Personal Website: [stephanbail.com](https://stephanbail.com)
-- GitHub: [github.com/stephanbail](https://github.com/stephanbail)
-
 ## Features
 
 - Create, read, update, and delete (CRUD) operations for movies
@@ -126,6 +113,37 @@ The API exposes the following endpoints:
 - `GET /api/users/{userId}/ratings` - Get movie ratings for a user
 
 Refer to the API documentation for detailed information on request and response formats.
+
+## Using the Postman Collection
+
+The project includes a Postman collection that helps you interact with the API endpoints for testing purposes. The collection is located in the project repository under the following path:
+
+[Helpers/REST_API.postman_collection.json](./Helpers/REST_API.postman_collection.json)
+
+The collection contains organized groups of requests for various operations like Identity, Movies, and Ratings. Follow these steps to import and use the Postman collection:
+
+1. Download and install [Postman](https://www.postman.com/downloads/) if you don't have it already.
+2. Clone the GitHub repository or download the [Helpers/REST_API.postman_collection.json](./Helpers/REST_API.postman_collection.json) file to your local machine.
+3. Open Postman and click on the "Import" button located in the top-left corner.
+4. In the Import window, click on "Upload Files" and select the `REST_API.postman_collection.json` file you downloaded in step 2, then click "Import" to add the collection to your Postman workspace.
+5. Once imported, you will see the collection named "API" in the left sidebar, containing three folders: Identity, Movies, and Ratings.
+
+Follow the instructions provided in the previous response to generate a token, make authenticated requests, and interact with the API using the Postman collection.
+
+![Postman](files/postman.png)
+
+## Acknowledgments
+
+A special thanks to **Nick Chapsas** for his excellent course on building REST APIs in .NET. Nick is a Microsoft MVP for Developer Technologies with years of experience in Software Engineering and Engineering Management. He has worked for some of the world's largest companies, building systems that serve millions of users and tens of thousands of requests per second. Nick is also a YouTube content creator, producing free educational content for C# and .NET. Check out his course [here](https://nickchapsas.com/courses/enrolled/2022064).
+
+## About the Author
+
+![Stephan Bail](files/author.jpg)
+
+**Stephan Bail** is a passionate Microsoft Azure architect & consultant with extensive experience working with blue-chip organizations. Based in Munich, Germany, Stephan enjoys advising mid-sized to large businesses and leveraging his expertise to ensure their cloud journey is successful.
+
+- Personal Website: [stephanbail.com](https://stephanbail.com)
+- GitHub: [github.com/stephanbail](https://github.com/stephanbail)
 
 ## Contributing
 
