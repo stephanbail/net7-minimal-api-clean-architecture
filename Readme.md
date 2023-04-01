@@ -109,7 +109,7 @@ dotnet build
 dotnet run --project Movies.Api
 ```
 
-![Run the .NET 7 project](files/run.png)
+![Run the .NET 7 project](files/terminal_run_project.png)
 
 7. Open your browser or preferred API testing tool (e.g., Postman) and navigate to the API endpoints.
 
