@@ -70,6 +70,9 @@ services:
 docker-compose up -d
 ```
 
+![Docker Desktop](files/docker.png)
+
+
 This will set up a PostgreSQL instance with the required configuration. Make sure to adjust the connection string in `appsettings.json` accordingly.
 
 ### Installation
@@ -83,7 +86,7 @@ git clone https://github.com/stephanbail/.NET-7-Minimal-API-Clean-Architecture.g
 2. Change to the project directory:
 
 ```
-cd MovieRatingAPI
+cd .NET-7-Minimal-API-Clean-Architecture
 ```
 
 3. Set up the PostgreSQL database and adjust the connection string in `appsettings.json` accordingly.
@@ -103,8 +106,10 @@ dotnet build
 6. Run the following command to start the API:
 
 ```
-dotnet run --project MovieRating.API
+dotnet run --project Movies.Api
 ```
+
+![Run the .NET 7 project](files/run.png)
 
 7. Open your browser or preferred API testing tool (e.g., Postman) and navigate to the API endpoints.
 
