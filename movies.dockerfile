@@ -26,7 +26,7 @@ COPY . ./
 RUN dotnet build Movies.Api/Movies.Api.csproj -c Release
 
 # Publish the app
-RUN dotnet publish Movies.Api/Movies.Api.csproj -c Release -o out
+RUN dotnet publish Movies.Api/Movies.Api.csproj -c Release -o out --verbosity detailed
 
 # List the contents of the output directory
 RUN ls -la /app/Movies.Api
