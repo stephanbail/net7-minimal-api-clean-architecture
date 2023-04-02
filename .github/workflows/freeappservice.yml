@@ -51,9 +51,11 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Run a Docker Compose action
-      uses: docker/compose-action@1.2.0
+      uses: docker/compose-action@v1
       with:
-        compose-file: ./docker-compose.yml
+        compose-file: docker-compose.yml
+        context: .
+
 
   deploy-webapp:
     permissions:
