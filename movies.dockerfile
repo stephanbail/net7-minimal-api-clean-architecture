@@ -11,7 +11,7 @@ COPY Movies.Contracts/Movies.Contracts.csproj Movies.Contracts/
 COPY Helpers/Identity.Api/Identity.Api.csproj Helpers/Identity.Api/
 
 # Restore dependencies
-RUN dotnet restore Movies.Api/Movies.Api.csproj
+RUN dotnet publish Movies.Api/Movies.Api.csproj -c Release -o out
 RUN dotnet restore Movies.Application/Movies.Application.csproj
 RUN dotnet restore Movies.Contracts/Movies.Contracts.csproj
 RUN dotnet restore Helpers/Identity.Api/Identity.Api.csproj
@@ -23,6 +23,7 @@ COPY . ./
 RUN dotnet publish Movies.Api/Movies.Api.csproj -c Release -o out
 
 # List the contents of the output directory
+RUN ls -la /app/Movies.Api
 RUN ls -la /app/Movies.Api/out
 
 # Set the base image to use for containers
