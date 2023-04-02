@@ -11,10 +11,13 @@ COPY Movies.Contracts/Movies.Contracts.csproj Movies.Contracts/
 COPY Helpers/Identity.Api/Identity.Api.csproj Helpers/Identity.Api/
 
 # Restore dependencies
-RUN dotnet publish Movies.Api/Movies.Api.csproj -c Release -o out
+RUN dotnet restore Movies.Api/Movies.Api.csproj
 RUN dotnet restore Movies.Application/Movies.Application.csproj
 RUN dotnet restore Movies.Contracts/Movies.Contracts.csproj
 RUN dotnet restore Helpers/Identity.Api/Identity.Api.csproj
+
+# Publish the app
+RUN dotnet publish Movies.Api/Movies.Api.csproj -c Release -o out
 
 # Copy the remaining files to the container
 COPY . ./
