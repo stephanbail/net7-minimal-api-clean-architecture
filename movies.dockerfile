@@ -29,8 +29,9 @@ FROM mcr.microsoft.com/dotnet/aspnet:7.0
 # Set the working directory to /app
 WORKDIR /app
 
-# Copy the published output from the build environment
-COPY --from=build-env /app/Movies.Api/out/ /app/
+# Copy the remaining files to the container
+COPY . ./
+RUN ls -la /app
 
 # Expose the port used by the app
 EXPOSE 80
