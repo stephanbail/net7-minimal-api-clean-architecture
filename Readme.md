@@ -67,7 +67,7 @@ This will set up a PostgreSQL instance with the required configuration. Make sur
 1. Clone the repository:
 
 ```
-git clone https://github.com/stephanbail/.NET-7-Minimal-API-Clean-Architecture.git
+git clone https://github.com/stephanbail/net7-minimal-api-clean-architecture.git
 ```
 
 2. Change to the project directory:
