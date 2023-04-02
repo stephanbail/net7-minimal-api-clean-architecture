@@ -30,8 +30,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:7.0
 WORKDIR /app
 
 # Copy the remaining files to the container
-COPY . ./
-RUN ls -la /app
+COPY --from=build-env /app/Movies.Api/out .
 
 # Expose the port used by the app
 EXPOSE 80
