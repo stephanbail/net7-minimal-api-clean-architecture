@@ -37,13 +37,13 @@ jobs:
           push: true
           tags: ghcr.io/${{ env.REPO }}/minimal-api:${{ github.sha }}
           context: .
-          file: ./movies.dockerfile
+          file: ./Movies.Application/movies.dockerfile
 
       - name: Create docker directory
         run: mkdir docker
       
       - name: Copy docker-compose.yml file
-        run: cp docker-compose.yml docker/
+        run: cp Movies.Application/docker-compose.yml docker/
 
   deploy-appservice:
     runs-on: ubuntu-latest

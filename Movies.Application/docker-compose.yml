@@ -1,0 +1,28 @@
+﻿version: '3.9'
+
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=pguser
+      - POSTGRES_PASSWORD=changeme
+      - POSTGRES_DB=movies
+    ports:
+      - '5432:5432'
+    networks:
+      - movie-network
+
+  movies.api:
+    image: ghcr.io/stephanbail/movies-api:latest
+    restart: always
+    ports:
+      - '80:80'
+    depends_on:
+      - db
+    networks:
+      - movie-network
+
+networks:
+  movie-network:
+    driver: bridge
