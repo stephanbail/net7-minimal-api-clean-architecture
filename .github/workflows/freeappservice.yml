@@ -39,6 +39,9 @@ jobs:
           context: .
           file: ./movies.dockerfile
 
+      - name: Create docker directory
+        run: mkdir docker
+      
       - name: Copy docker-compose.yml file
         run: cp docker-compose.yml docker/
 
