@@ -51,8 +51,8 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Move docker-compose.yml file
-        run: mv ./docker-compose.yml /docker/docker-compose.yml
-        
+        run: mv ./docker-compose.yml docker/
+
       - name: Install Docker Compose
         run: |
           sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
