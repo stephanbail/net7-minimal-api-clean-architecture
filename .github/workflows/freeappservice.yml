@@ -57,7 +57,7 @@ jobs:
 
       - name: Run Docker Compose
         run: |
-          docker-compose -f docker-compose.yml up -d
+          docker-compose -f ./docker-compose.yml up -d
         working-directory: ${{ github.workspace }}
 
   deploy-webapp:
