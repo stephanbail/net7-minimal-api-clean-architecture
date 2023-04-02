@@ -37,4 +37,4 @@ RUN ls -la /app
 EXPOSE 80
 
 # Set the entry point for the container
-ENTRYPOINT ["dotnet", "out/Movies.Api.dll"]
+ENTRYPOINT ["dotnet", "Movies.Api.dll"]
