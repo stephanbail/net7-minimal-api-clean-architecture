@@ -53,7 +53,7 @@ jobs:
     - name: Run a Docker Compose action
       uses: docker/compose-action@1.2.0
       with:
-        compose-file: /Users/stephanbail/Documents/projects/NET-7-Minimal-API-Clean-Architecture/Movies.Application/docker-compose.yml
+        compose-file: Movies.Application/docker-compose.yml
         context: .
 
   deploy-webapp:
