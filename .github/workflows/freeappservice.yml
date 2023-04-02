@@ -37,7 +37,7 @@ jobs:
           push: true
           tags: ghcr.io/${{ env.REPO }}/minimal-api:${{ github.sha }}
           context: .
-          file: ./Dockerfile
+          file: ./movies.dockerfile
 
 
   deploy:
