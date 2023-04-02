@@ -1,6 +1,8 @@
 # Set the base image to use for containers
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build-env
 
+RUN dotnet --version
+
 # Set the working directory to /app
 WORKDIR /app
 
