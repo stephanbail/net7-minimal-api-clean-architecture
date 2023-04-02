@@ -21,7 +21,6 @@ COPY . ./
 
 # Build the app
 RUN dotnet publish Movies.Api/Movies.Api.csproj -c Release -o out
-RUN ls -la /app/Movies.Api
 
 # Set the base image to use for containers
 FROM mcr.microsoft.com/dotnet/aspnet:7.0
@@ -29,9 +28,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:7.0
 # Set the working directory to /app
 WORKDIR /app
 
-# Copy the remaining files to the container
-COPY . ./
-RUN ls -la /app
+# Copy the published output to the container
+COPY --from=build-env /app/out .
 
 # Expose the port used by the app
 EXPOSE 80
