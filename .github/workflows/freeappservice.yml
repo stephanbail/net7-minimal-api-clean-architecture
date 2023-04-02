@@ -39,6 +39,9 @@ jobs:
           context: .
           file: ./movies.dockerfile
 
+      - name: Copy docker-compose.yml file
+        run: cp docker-compose.yml docker/
+
   deploy-appservice:
     runs-on: ubuntu-latest
     needs: build
@@ -61,7 +64,7 @@ jobs:
 
       - name: Run Docker Compose
         run: |
-          docker-compose -f ${{ github.workspace }}/docker-compose.yml up -d
+          docker-compose -f ${{ github.workspace }}/docker/docker-compose.yml up -d
 
   deploy-webapp:
     permissions:
