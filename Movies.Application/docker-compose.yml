@@ -9,5 +9,5 @@ services:
       - POSTGRES_USER=pguser
       - POSTGRES_PASSWORD=changeme
       - POSTGRES_DB=movies
-    ports:2
+    ports:
       - '5432:5432'
