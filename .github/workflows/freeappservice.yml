@@ -51,10 +51,10 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Run a Docker Compose action
-      - uses: actions/checkout@v3
-      - uses: isbang/compose-action@1.4.1
-        with:
-          compose-file: ./docker-compose.yml
+      uses: actions/checkout@v3
+      uses: isbang/compose-action@1.4.1
+      with:
+        compose-file: ./docker-compose.yml
 
   deploy-webapp:
     permissions:
