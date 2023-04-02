@@ -36,7 +36,9 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ env.REPO }}/minimal-api:${{ github.sha }}
+          context: .
           file: ./Dockerfile
+
 
   deploy:
     permissions:
