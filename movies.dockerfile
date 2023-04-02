@@ -21,7 +21,6 @@ COPY . ./
 
 # Build the app
 RUN dotnet publish Movies.Api/Movies.Api.csproj -c Release -o out
-RUN ls -la /app/Movies.Api
 
 # Set the base image to use for containers
 FROM mcr.microsoft.com/dotnet/aspnet:7.0
