@@ -16,21 +16,12 @@ RUN dotnet restore Movies.Application/Movies.Application.csproj
 RUN dotnet restore Movies.Contracts/Movies.Contracts.csproj
 RUN dotnet restore Helpers/Identity.Api/Identity.Api.csproj
 
-# Publish the app
-RUN dotnet publish Movies.Api/Movies.Api.csproj -c Release -o out
-
 # Copy the remaining files to the container
 COPY . ./
 
 # Build the app
-RUN dotnet build Movies.Api/Movies.Api.csproj -c Release
-
-# Publish the app
-RUN dotnet publish Movies.Api/Movies.Api.csproj -c Release -o out --verbosity detailed
-
-# List the contents of the output directory
+RUN dotnet publish Movies.Api/Movies.Api.csproj -c Release -o out
 RUN ls -la /app/Movies.Api
-RUN ls -la /app/Movies.Api/out
 
 # Set the base image to use for containers
 FROM mcr.microsoft.com/dotnet/aspnet:7.0
@@ -39,7 +30,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:7.0
 WORKDIR /app
 
 # Copy the remaining files to the container
-COPY --from=build-env /app/Movies.Api/out .
+COPY . ./
+RUN ls -la /app
 
 # Expose the port used by the app
 EXPOSE 80
