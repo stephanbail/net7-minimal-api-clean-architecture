@@ -1,5 +1,5 @@
 # Set the base image to use for containers
-FROM mcr.microsoft.com/dotnet/sdk:latest AS build-env
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 
 # Set the working directory to /app
 WORKDIR /app
@@ -24,7 +24,7 @@ RUN dotnet publish Movies.Api/Movies.Api.csproj -c Release -o out
 RUN ls -la /app/Movies.Api
 
 # Set the base image to use for containers
-FROM mcr.microsoft.com/dotnet/aspnet:latest
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
 
 # Set the working directory to /app
 WORKDIR /app
